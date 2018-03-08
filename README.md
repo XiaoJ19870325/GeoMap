@@ -115,7 +115,7 @@ enum{
 类型命名每个单词以大写字母开头，不包含下划线，所有类型命名——类、结构体、类型定义（typedef）、枚举，均使用相同约定。
 
 ``` C++
-struct MyDataStruct
+struct DataStruct
 {
     QString strName;
     int     nYear;
@@ -125,7 +125,7 @@ struct MyDataStruct
 
 typedef QList<MyDataStruct*> LstDataStore;
 
-class MyObject
+class GsEvent
 {
 public:
     //Todo
