@@ -1,8 +1,8 @@
 # GeoMap 开发规范
 
-文档规定GeoMap开发规范，包括文件组织、程序注释、命名规则、数据类型（包含类）、函数及语句、UI规范、资源规范。
+文档规定GeoMap开发规范，包括[文件组织](#jump)、程序注释、命名规则、数据类型（包含类）、函数及语句、UI规范、资源规范。
 
-## 一、文件组织 ##
+##<span id="jump"> 一、文件组织</span> ##
 **1. 组织目录**
 
 ![](http://192.168.100.118/kodexplorer/index.php?user/public_link&fid=be8c-AtTby5UyHj16HEfJUwFJxLpl64mJI_uFNhqYF3ReeNmnkSbcB2CTepbpxC5WFPsJ_hIZMbBVtrxNRU3ydsNxrpyq-besLCDrrb7is5FtZbxbjgAK_8cHHR51Ub6hO-b9IAkOms6DT6kh9gaFbU979l9Db63tzCM4Uy8Ttdb&file_name=/folder.png)
@@ -35,7 +35,7 @@
 
 **3. 文件规范**：
 
-（1）所有的文件命名必须小写;
+（1）所有的文件命名必须小写,比如gsapp.h;
 
 （2）每个.h头文件，必须加#define进行保护，命名格式:<FILE>_H_，比如：
 
@@ -108,11 +108,11 @@ enum{
 
 **2. 文件命名规则**
 
-文件名要全部小写，不要使用破折号-、下划线_,如ribboncontrolhook.h,定义类时文件名一般成对出现。
+文件名要全部小写，不要使用破折号-、下划线_,如ribboncontrolhook.h;定义类时文件名一般成对出现,如gsapp.h、gsapp.cpp。
 
 **3. 类型命名**
 
-类型命名每个单词以大写字母开头，不包含下划线，所有类型命名——类、结构体、类型定义（typedef）、枚举，均使用相同约定。
+类型命名每个单词以大写字母开头，不包含下划线，所有类型命名——类、结构体、类型定义（typedef）、枚举，均使用相同约定,比如：
 
 ``` C++
 struct DataStruct
@@ -123,7 +123,7 @@ struct DataStruct
     QDate   birthday;
 };
 
-typedef QList<MyDataStruct*> LstDataStore;
+typedef QList<DataStruct*> DataStore;
 
 class GsEvent
 {
@@ -188,7 +188,12 @@ const long GEOCRS_ID = 3344;
 常见的操作必须使用Qt自带的类型，如果使用第三方库必须申请，常见的数据类型如下：
 
 ``` C++
+QChar
 QString
+QPoint
+QSize
+QRect
+QFont
 QTextCodec
 QByteArray
 QVariant
@@ -202,6 +207,7 @@ QTextStream
 QList
 QMap
 QImage
+QIcon
 QPixmap
 QBitmap
 QPicture
@@ -215,7 +221,7 @@ QPalette
 
 （2）单参数构造函数使用C++关键字explicit；
 
-（3）所有的基类后缀必须以"Base"结尾：
+（3）所有的基类后缀必须以"Base"结尾，比如：
 
 ``` C++
 class HumanBase
@@ -407,10 +413,18 @@ if(spBase) spBase->dosomething();
 
 （2）UI的文字控件都使用英文占位（英文都从qgis上找对应的内容，找不到的讨论确认），然后通过国际化的手段翻译成中文；
 
-（3）UI控件及其子控件命名规则如下：
+（3）UI控件及其子控件命名规则，以m开头，以控件类型简称结尾，中间根据控件作用命名，如下：
 
 ```C++
-
+<widget class="QMenu" name="mRecentProjectsMenu">
+<widget class="QDialog" name="mQgsAboutDialog">
+<widget class="QComboBox" name="mTypeBox"/>
+<widget class="QLineEdit" name="mNameEdit"/>
+<widget class="QRadioButton" name="mTabButton">
+<widget class="QGroupBox" name="mAttributesGroupBox">
+<widget class="QPushButton" name="mColumnDownPushButton">
+<widget class="QTableView" name="mColumnsTableView">
 ```
 ## 七、资源规范 ##
-（1）所有的图标都是用QGIS相对应的图标。
+（1）所有的图标都是用QGIS相对应的图标;
+（2）图片采用png格式。
