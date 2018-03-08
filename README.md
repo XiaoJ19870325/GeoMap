@@ -2,7 +2,7 @@
 
 文档规定GeoMap开发规范，包括[文件组织](#jump)、程序注释、命名规则、数据类型（包含类）、函数及语句、UI规范、资源规范。
 
-## 一、<span id="jump">文件组织</span> ##
+## 一、文件组织 ##
 **1. 组织目录**
 
 ![](http://192.168.100.118/kodexplorer/index.php?user/public_link&fid=be8c-AtTby5UyHj16HEfJUwFJxLpl64mJI_uFNhqYF3ReeNmnkSbcB2CTepbpxC5WFPsJ_hIZMbBVtrxNRU3ydsNxrpyq-besLCDrrb7is5FtZbxbjgAK_8cHHR51Ub6hO-b9IAkOms6DT6kh9gaFbU979l9Db63tzCM4Uy8Ttdb&file_name=/folder.png)
@@ -408,7 +408,7 @@ if(spBase) spBase->dosomething();
 ```
 （6）不允许引用windows的任何api。
 
-## 六、UI规范 ##
+## 六、<span id="jump">UI规范</span> ##
 （1）UI均采用.ui后缀，基于QGIS3.0源码，基于QGIS的UI进行修改；
 
 （2）UI的文字控件都使用英文占位（英文都从qgis上找对应的内容，找不到的讨论确认），然后通过国际化的手段翻译成中文；
