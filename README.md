@@ -3,8 +3,10 @@
 文档规定GeoMap开发规范，包括文件组织、程序注释、命名规则、数据类型（包含类）、函数及语句、UI规范、资源规范。
 
 ## 一、文件组织 ##
-**1. 组织目录**<br/>
-![](http://192.168.100.118/kodexplorer/index.php?user/public_link&fid=be8c-AtTby5UyHj16HEfJUwFJxLpl64mJI_uFNhqYF3ReeNmnkSbcB2CTepbpxC5WFPsJ_hIZMbBVtrxNRU3ydsNxrpyq-besLCDrrb7is5FtZbxbjgAK_8cHHR51Ub6hO-b9IAkOms6DT6kh9gaFbU979l9Db63tzCM4Uy8Ttdb&file_name=/folder.png)<br/>
+**1. 组织目录**
+
+![](http://192.168.100.118/kodexplorer/index.php?user/public_link&fid=be8c-AtTby5UyHj16HEfJUwFJxLpl64mJI_uFNhqYF3ReeNmnkSbcB2CTepbpxC5WFPsJ_hIZMbBVtrxNRU3ydsNxrpyq-besLCDrrb7is5FtZbxbjgAK_8cHHR51Ub6hO-b9IAkOms6DT6kh9gaFbU979l9Db63tzCM4Uy8Ttdb&file_name=/folder.png)
+
 （1）<font color="red">data</font>：数据文件夹，存放系统各种数据文件，包括系统配置数据等；<br/>
 （2）<font color="red">debugx64/releasex64</font>：编译目录文件夹，包含依赖的第三方lib和编译生成的库；该文件夹下包含plugins文件夹，用于存储插件；<br/>
 （3）<font color="red">i18n</font>：国际化文件夹，存放语言包；<br/>
