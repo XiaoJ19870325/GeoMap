@@ -2,7 +2,7 @@
 
 文档规定GeoMap开发规范，包括[文件组织](#jump)、程序注释、命名规则、数据类型（包含类）、函数及语句、UI规范、资源规范。
 
-##<span id="jump"> 一、文件组织</span> ##
+## 一、<span id="jump">文件组织</span> ##
 **1. 组织目录**
 
 ![](http://192.168.100.118/kodexplorer/index.php?user/public_link&fid=be8c-AtTby5UyHj16HEfJUwFJxLpl64mJI_uFNhqYF3ReeNmnkSbcB2CTepbpxC5WFPsJ_hIZMbBVtrxNRU3ydsNxrpyq-besLCDrrb7is5FtZbxbjgAK_8cHHR51Ub6hO-b9IAkOms6DT6kh9gaFbU979l9Db63tzCM4Uy8Ttdb&file_name=/folder.png)
