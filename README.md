@@ -427,4 +427,4 @@ if(spBase) spBase->dosomething();
 ```
 ## 七、资源规范 ##
 （1）所有的图标都是用QGIS相对应的图标;
-（2）图片采用png格式。
+（2）图片采用png格式或svg格式。
